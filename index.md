@@ -1,19 +1,32 @@
-# Kaustav G – Simulation Codes
+# Kaustav Mondal
 
-Welcome to my simulation repository.
+<img src="assets/profile.jpg" width="200">
 
-Here I upload codes related to:
+PhD Student in Statistical Physics and Complex Systems.
 
-- Active matter simulations
-- Langevin dynamics
-- Particle-based models
+My research focuses on:
 
-## Projects
+- Active matter
+- Nonequilibrium statistical mechanics
+- Particle-based simulations
+- Bacterial colony modelling
 
-- Rod particle simulation
-- Active-passive mixture model
-- Bacterial colony simulation
+I develop computational models to study emergent collective behavior in active and passive particle systems.
 
-## Documentation
+---
 
-Detailed explanation of the model and simulation techniques can be found in the PDF files provided in each project repository.
+## Research Interests
+
+- Active-passive mixtures
+- Rod-like particle simulations
+- Stochastic dynamics
+- Biofilm modelling
+
+---
+
+## Quick Links
+
+- [Research Projects](research.md)
+- [Publications](publications.md)
+- [Teaching](teaching.md)
+- [Simulation Codes](https://github.com/kaustav0099)
