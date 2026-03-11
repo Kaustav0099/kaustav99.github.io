@@ -1,0 +1,9 @@
+title: Kaustav G
+description: Research in Active Matter and Statistical Physics
+
+theme: minima
+
+header_pages:
+  - research.md
+  - publications.md
+  - teaching.md
