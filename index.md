@@ -22,10 +22,3 @@ I develop computational models to study emergent collective behavior in active a
 - Biofilm modelling
 
 ---
-
-## Quick Links
-
-- [Research Projects](research.md)
-- [Publications](publications.md)
-- [Teaching](teaching.md)
-- [Simulation Codes](https://github.com/kaustav0099)
