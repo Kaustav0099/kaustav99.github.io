@@ -1,6 +1,6 @@
 # Kaustav Mondal
 
-<img src="assets/profile.jpg" width="200">
+<img src="assets/profile.jpg" >
 
 PhD Student in Statistical Physics and Complex Systems.
 
