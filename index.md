@@ -1,4 +1,3 @@
-# Kaustav Mondal
 
 <img src="assets/profile.jpg" width="200">
 
