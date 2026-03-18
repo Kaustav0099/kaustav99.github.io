@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My Research Page</title>
+<title>Kaustav Mondal | Research</title>
 
 <style>
 
@@ -31,13 +31,13 @@ body {
     font-weight: 500;
 }
 
-/* 👇 reduced font size here */
 .navbar .links a {
     margin-left: 25px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;   /* smaller */
+    font-size: 16px;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 .navbar .links a:hover {
@@ -52,10 +52,10 @@ header {
     font-weight: 600;
 }
 
-/* CONTAINER (FULL WIDTH FIX) */
+/* CONTAINER */
 .container {
-    width: 95%;          /* 👈 increased from 85% */
-    max-width: 1400px;   /* 👈 prevents too wide on big screens */
+    width: 95%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -74,11 +74,15 @@ header {
 }
 
 .profile-text {
-    flex: 1;  /* 👈 makes it expand */
+    flex: 1;
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profile-text h2 {
+    margin-top: 0;
 }
 
 /* RESEARCH GRID */
@@ -106,6 +110,11 @@ header {
     border-radius: 10px;
 }
 
+.card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 /* FOOTER */
 footer {
     margin-top: 60px;
@@ -115,11 +124,21 @@ footer {
 }
 
 </style>
-
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="name">Kaustav Mondal</div>
+    <div class="links">
+        <a href="#">Research</a>
+        <a href="#">Publications</a>
+        <a href="#">Teaching</a>
+    </div>
+</div>
+
+<!-- HEADER -->
 <header>
     My Research Page
 </header>
@@ -155,22 +174,22 @@ footer {
     <div class="research-grid">
 
         <div class="card">
-            <img src="assets/work1.jpg">
+            <img src="assets/work1.jpg" alt="">
             <p>Active-passive particle simulations and clustering behavior.</p>
         </div>
 
         <div class="card">
-            <img src="assets/work2.jpg">
+            <img src="assets/work2.jpg" alt="">
             <p>Rod-like particle dynamics and anisotropic interactions.</p>
         </div>
 
         <div class="card">
-            <img src="assets/work3.jpg">
+            <img src="assets/work3.jpg" alt="">
             <p>Stochastic modeling and nonequilibrium systems.</p>
         </div>
 
         <div class="card">
-            <img src="assets/work4.jpg">
+            <img src="assets/work4.jpg" alt="">
             <p>Biofilm and bacterial colony simulations.</p>
         </div>
 
@@ -178,6 +197,7 @@ footer {
 
 </div>
 
+<!-- FOOTER -->
 <footer>
     Contact: your.email@example.com | Twitter | LinkedIn
 </footer>
