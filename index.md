@@ -1,204 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<title>Kaustav Mondal | Research</title>
+    body {
+      background: #f5f5f5;
+    }
 
-<style>
+    .container {
+      width: 95%;
+      margin: auto;
+    }
 
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Header */
+    .header {
+      border: 2px solid black;
+      text-align: center;
+      padding: 20px;
+      margin: 20px 0;
+      font-size: 28px;
+      background: white;
+    }
 
-/* BODY */
-body {
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-}
+    /* Main Section */
+    .main {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
 
-/* NAVBAR (ONLY ONE) */
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;   /* reduced side padding */
-    background: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
+    .photo {
+      flex: 1;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      background: white;
+    }
 
-.navbar .name {
-    font-size: 20px;
-    font-weight: 500;
-}
+    .description {
+      flex: 3;
+      border: 2px solid black;
+      padding: 20px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: white;
+    }
 
-.navbar .links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;   /* smaller */
-    font-weight: 500;
-}
+    /* Papers Section */
+    .papers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
 
-.navbar .links a:hover {
-    color: #0077cc;
-}
+    .paper {
+      border: 2px solid black;
+      background: white;
+      padding: 10px;
+      text-align: center;
+    }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 30px 10px;
-    font-size: 32px;
-    font-weight: 600;
-}
+    .paper img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
 
-/* CONTAINER (FULL WIDTH FIX) */
-.container {
-    width: 100%;           /* 👈 FULL WIDTH */
-    max-width: 1200px;     /* 👈 controlled width */
-    margin: auto;
-    padding: 0 20px;       /* 👈 small side padding */
-}
+    /* Footer */
+    .footer {
+      border: 2px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      background: white;
+    }
 
-/* PROFILE */
-.profile {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    margin: 40px 0;
-}
+    /* Responsive */
+    @media (max-width: 900px) {
+      .main {
+        flex-direction: column;
+      }
 
-.profile img {
-    width: 260px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+      .papers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-.profile-text {
-    flex: 1;
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.profile-text h2 {
-    margin-bottom: 10px;
-}
-
-/* GRID */
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    margin-top: 50px;
-    background: white;
-    text-align: center;
-    padding: 20px;
-}
-
-</style>
+    @media (max-width: 500px) {
+      .papers {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- ONLY NAVBAR -->
-<div class="navbar">
-    <div class="name">Kaustav Mondal</div>
-    <div class="links">
-        <a href="#">Research</a>
-        <a href="#">Publications</a>
-        <a href="#">Teaching</a>
-    </div>
-</div>
+  <div class="container">
 
-<header>
-    My Research Page
-</header>
-
-<div class="container">
-
-    <div class="profile">
-        <img src="assets/profile.jpg" alt="My Photo">
-
-        <div class="profile-text">
-            <h2>PhD Student in Statistical Physics and Complex Systems</h2>
-
-            <p>
-            My research focuses on active matter, nonequilibrium statistical mechanics,
-            and particle-based simulations.
-            </p>
-
-            <ul>
-                <li>Active matter</li>
-                <li>Particle simulations</li>
-                <li>Bacterial colony modelling</li>
-            </ul>
-
-            <p>
-            I develop computational models to study emergent collective behavior
-            in active and passive systems.
-            </p>
-        </div>
+    <!-- Header -->
+    <div class="header">
+      Heading of the page || Navigation bar
     </div>
 
-    <div class="research-grid">
+    <!-- Main Section -->
+    <div class="main">
+      <div class="photo">
+        <p>Photo of mine</p>
+      </div>
 
-        <div class="card">
-            <img src="assets/work1.jpg">
-            <p>Active-passive particle simulations and clustering behavior.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/work2.jpg">
-            <p>Rod-like particle dynamics and anisotropic interactions.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/work3.jpg">
-            <p>Stochastic modeling and nonequilibrium systems.</p>
-        </div>
-
-        <div class="card">
-            <img src="assets/work4.jpg">
-            <p>Biofilm and bacterial colony simulations.</p>
-        </div>
-
+      <div class="description">
+        <p>Description of me and my research</p>
+      </div>
     </div>
 
-</div>
+    <!-- Research Papers -->
+    <div class="papers">
+      <div class="paper">
+        <img src="https://via.placeholder.com/300" alt="paper1">
+        <p>Photo from my research paper-1 with description below</p>
+      </div>
 
-<footer>
-    Contact: your.email@example.com | Twitter | LinkedIn
-</footer>
+      <div class="paper">
+        <img src="https://via.placeholder.com/300" alt="paper2">
+        <p>Photo from my research paper-2 with description below</p>
+      </div>
+
+      <div class="paper">
+        <img src="https://via.placeholder.com/300" alt="paper3">
+        <p>Photo from my research paper-3 with description below</p>
+      </div>
+
+      <div class="paper">
+        <img src="https://via.placeholder.com/300" alt="paper4">
+        <p>Photo from my research paper-4 with description below</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Contact: email | Twitter | LinkedIn
+    </div>
+
+  </div>
 
 </body>
 </html>
