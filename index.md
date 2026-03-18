@@ -64,13 +64,12 @@ body {
 /* PAPERS */
 .papers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
   gap: 20px;
   margin-bottom: 30px;
 }
 
 .paper {
-  border: 2px solid black;
   background: white;
   padding: 10px;
   text-align: center;
@@ -83,7 +82,7 @@ body {
 
 .paper img {
   width: 100%;
-  height: 150px;
+  height: 180px;  /* slightly bigger */
   object-fit: cover;
   margin-bottom: 10px;
 }
