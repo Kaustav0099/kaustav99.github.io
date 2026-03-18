@@ -7,6 +7,8 @@
 <title>My Research Page</title>
 
 <style>
+
+/* GENERAL */
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, sans-serif;
@@ -14,48 +16,77 @@ body {
     color: #333;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 40px 20px;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
     background: white;
-    font-size: 32px;
-    font-weight: 600;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* MAIN SECTION */
+.navbar .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* 👇 reduced font size here */
+.navbar .links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;   /* smaller */
+    font-weight: 500;
+}
+
+.navbar .links a:hover {
+    color: #0077cc;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* CONTAINER (FULL WIDTH FIX) */
 .container {
-    width: 85%;
-    margin: 40px auto;
+    width: 95%;          /* 👈 increased from 85% */
+    max-width: 1400px;   /* 👈 prevents too wide on big screens */
+    margin: 0 auto;
 }
 
 /* PROFILE SECTION */
 .profile {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
-    margin-bottom: 60px;
+    margin: 40px 0;
 }
 
 .profile img {
-    width: 220px;
+    width: 260px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .profile-text {
+    flex: 1;  /* 👈 makes it expand */
     background: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* RESEARCH CARDS */
+/* RESEARCH GRID */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .card {
@@ -75,19 +106,14 @@ header {
     border-radius: 10px;
 }
 
-.card p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
 /* FOOTER */
 footer {
     margin-top: 60px;
     background: white;
     text-align: center;
-    padding: 25px;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    padding: 20px;
 }
+
 </style>
 
 </head>
