@@ -23,32 +23,6 @@ body {
   margin: auto;
 }
 
-/* HEADER (ONLY ONE NAVBAR) */
-.header {
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  margin: 20px 0;
-  background: white;
-}
-
-.header .name {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.header .nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.header .nav a:hover {
-  color: blue;
-}
 
 /* MAIN SECTION */
 .main {
@@ -147,16 +121,7 @@ body {
 
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="name">Kaustav Mondal</div>
 
-    <div class="nav">
-      <a href="#">Research</a>
-      <a href="#">Publications</a>
-      <a href="#">Teaching</a>
-    </div>
-  </div>
 
   <!-- MAIN SECTION -->
   <div class="main">
