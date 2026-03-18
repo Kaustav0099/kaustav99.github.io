@@ -1,163 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Profile</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaustav Mondal | Research</title>
 
-    body {
-      background: #f5f5f5;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    .container {
-      width: 95%;
-      margin: auto;
-    }
+body {
+  background: #f5f5f5;
+}
 
-    /* Header */
-    .header {
-      border: 2px solid black;
-      text-align: center;
-      padding: 20px;
-      margin: 20px 0;
-      font-size: 28px;
-      background: white;
-    }
+/* CONTAINER */
+.container {
+  width: 95%;
+  margin: auto;
+}
 
-    /* Main Section */
-    .main {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
+/* HEADER (NOW WITH NAVBAR) */
+.header {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 20px 0;
+  background: white;
+}
 
-    .photo {
-      flex: 1;
-      border: 2px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 300px;
-      background: white;
-    }
+.header .name {
+  font-size: 22px;
+  font-weight: bold;
+}
 
-    .description {
-      flex: 3;
-      border: 2px solid black;
-      padding: 20px;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: white;
-    }
+.header .nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
 
-    /* Papers Section */
-    .papers {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-bottom: 30px;
-    }
+.header .nav a:hover {
+  color: blue;
+}
 
-    .paper {
-      border: 2px solid black;
-      background: white;
-      padding: 10px;
-      text-align: center;
-    }
+/* MAIN SECTION */
+.main {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
 
-    .paper img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
+.photo {
+  flex: 1;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 10px;
+}
 
-    /* Footer */
-    .footer {
-      border: 2px solid black;
-      text-align: center;
-      padding: 20px;
-      font-size: 20px;
-      background: white;
-    }
+.photo img {
+  width: 100%;
+  height: auto;
+}
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .main {
-        flex-direction: column;
-      }
+/* DESCRIPTION */
+.description {
+  flex: 3;
+  border: 2px solid black;
+  padding: 20px;
+  background: white;
+}
 
-      .papers {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+.description h2 {
+  margin-bottom: 10px;
+}
 
-    @media (max-width: 500px) {
-      .papers {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.description ul {
+  margin: 10px 0 10px 20px;
+}
+
+/* PAPERS */
+.papers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.paper {
+  border: 2px solid black;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.paper:hover {
+  transform: translateY(-5px);
+}
+
+.paper img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  background: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .papers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .papers {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- Header -->
-    <div class="header">
-      Heading of the page || Navigation bar
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">Kaustav Mondal</div>
+
+    <div class="nav">
+      <a href="#">Research</a>
+      <a href="#">Publications</a>
+      <a href="#">Teaching</a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- PHOTO -->
+    <div class="photo">
+      <img src="assets/profile.jpg" alt="My Photo">
     </div>
 
-    <!-- Main Section -->
-    <div class="main">
-      <div class="photo">
-        <p>Photo of mine</p>
-      </div>
+    <!-- DESCRIPTION -->
+    <div class="description">
+      <h2>PhD Student in Statistical Physics and Complex Systems</h2>
 
-      <div class="description">
-        <p>Description of me and my research</p>
-      </div>
-    </div>
+      <p>
+        My research focuses on active matter, nonequilibrium statistical mechanics,
+        and particle-based simulations.
+      </p>
 
-    <!-- Research Papers -->
-    <div class="papers">
-      <div class="paper">
-        <img src="https://via.placeholder.com/300" alt="paper1">
-        <p>Photo from my research paper-1 with description below</p>
-      </div>
+      <ul>
+        <li>Active matter</li>
+        <li>Particle simulations</li>
+        <li>Bacterial colony modelling</li>
+      </ul>
 
-      <div class="paper">
-        <img src="https://via.placeholder.com/300" alt="paper2">
-        <p>Photo from my research paper-2 with description below</p>
-      </div>
-
-      <div class="paper">
-        <img src="https://via.placeholder.com/300" alt="paper3">
-        <p>Photo from my research paper-3 with description below</p>
-      </div>
-
-      <div class="paper">
-        <img src="https://via.placeholder.com/300" alt="paper4">
-        <p>Photo from my research paper-4 with description below</p>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      Contact: email | Twitter | LinkedIn
+      <p>
+        I develop computational models to study emergent collective behavior
+        in active and passive particle systems.
+      </p>
     </div>
 
   </div>
+
+  <!-- PAPERS -->
+  <div class="papers">
+
+    <div class="paper">
+      <a href="https://github.com/your-username/project1" target="_blank">
+        <img src="assets/work1.jpg">
+        <p>Active-passive particle simulations and clustering behavior</p>
+      </a>
+    </div>
+
+    <div class="paper">
+      <a href="https://github.com/your-username/project2" target="_blank">
+        <img src="assets/work2.jpg">
+        <p>Rod-like particle dynamics and anisotropic interactions</p>
+      </a>
+    </div>
+
+    <div class="paper">
+      <a href="https://github.com/your-username/project3" target="_blank">
+        <img src="assets/work3.jpg">
+        <p>Stochastic modeling and nonequilibrium systems</p>
+      </a>
+    </div>
+
+    <div class="paper">
+      <a href="https://github.com/your-username/project4" target="_blank">
+        <img src="assets/work4.jpg">
+        <p>Biofilm and bacterial colony simulations</p>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Contact: your.email@example.com |
+    <a href="#">Twitter</a> |
+    <a href="#">LinkedIn</a>
+  </div>
+
+</div>
 
 </body>
 </html>
