@@ -23,7 +23,7 @@ body {
   margin: auto;
 }
 
-/* HEADER (NOW WITH NAVBAR) */
+/* HEADER (ONLY ONE NAVBAR) */
 .header {
   border: 2px solid black;
   display: flex;
@@ -53,23 +53,23 @@ body {
 /* MAIN SECTION */
 .main {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 30px;
+  align-items: center;
 }
 
+/* PHOTO (NO BOX, BIGGER) */
 .photo {
-  flex: 1;
-  border: 2px solid black;
+  flex: 1.2;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
-  padding: 10px;
 }
 
 .photo img {
   width: 100%;
-  height: auto;
+  max-width: 320px;
+  border-radius: 10px;
 }
 
 /* DESCRIPTION */
@@ -158,7 +158,7 @@ body {
     </div>
   </div>
 
-  <!-- MAIN -->
+  <!-- MAIN SECTION -->
   <div class="main">
 
     <!-- PHOTO -->
@@ -194,28 +194,28 @@ body {
 
     <div class="paper">
       <a href="https://github.com/your-username/project1" target="_blank">
-        <img src="assets/work1.jpg">
+        <img src="assets/work1.jpg" alt="">
         <p>Active-passive particle simulations and clustering behavior</p>
       </a>
     </div>
 
     <div class="paper">
       <a href="https://github.com/your-username/project2" target="_blank">
-        <img src="assets/work2.jpg">
+        <img src="assets/work2.jpg" alt="">
         <p>Rod-like particle dynamics and anisotropic interactions</p>
       </a>
     </div>
 
     <div class="paper">
       <a href="https://github.com/your-username/project3" target="_blank">
-        <img src="assets/work3.jpg">
+        <img src="assets/work3.jpg" alt="">
         <p>Stochastic modeling and nonequilibrium systems</p>
       </a>
     </div>
 
     <div class="paper">
       <a href="https://github.com/your-username/project4" target="_blank">
-        <img src="assets/work4.jpg">
+        <img src="assets/work4.jpg" alt="">
         <p>Biofilm and bacterial colony simulations</p>
       </a>
     </div>
